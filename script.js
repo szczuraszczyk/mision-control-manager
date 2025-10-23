@@ -63,6 +63,10 @@ function raportMisji(nazwaMisji) {
     // }
 }
 
+function ukonczCel(nazwaMisji, i){
+    delete nazwaMisji.celeBadawcze[i];
+}
+
 
 
 const misjaMissipi12 = zaplanujMisje("Missipi12", "Badawcza");
@@ -74,5 +78,7 @@ zaladujSprzet(misjaMissipi12, "2x Rewolwer");
 
 przemierzDystans(misjaMissipi12, 123456);
 
+ukonczCel(misjaMissipi12, 1);
 
+console.log(misjaMissipi12);
 console.log(raportMisji(misjaMissipi12));
