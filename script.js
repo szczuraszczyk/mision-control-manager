@@ -63,8 +63,22 @@ function raportMisji(nazwaMisji) {
     // }
 }
 
-function ukonczCel(nazwaMisji, i){
+function ukonczCel(nazwaMisji, i) {
     delete nazwaMisji.celeBadawcze[i];
+}
+
+function symulujAwarie(nazwaMisji) {
+    o = Math.floor(Math.random() * 3);
+    i = Math.floor(Math.random() * 1);
+    zapasy = misjaMissipi12.zapasy;
+
+    if (o = 0){
+        delete nazwaMisji.ladownia.narzedzia[i] 
+    } if (o = 1){
+        zapasy - 50;
+    } else{
+
+    }
 }
 
 
@@ -80,5 +94,8 @@ przemierzDystans(misjaMissipi12, 123456);
 
 ukonczCel(misjaMissipi12, 1);
 
+symulujAwarie(misjaMissipi12);
+
 console.log(misjaMissipi12);
+console.log(misjaMissipi12.ladownia)
 console.log(raportMisji(misjaMissipi12));
